@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D102" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Country" representedClassName="Country" syncable="YES">
+        <attribute name="area" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="capital" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="population" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <fetchRequest name="AreaFetchRequest" entity="Country" predicateString="area &lt; 90000"/>
+    <fetchRequest name="CapitalFetchRequest" entity="Country" predicateString="capital BEGINSWITH &quot;D&quot;"/>
+    <fetchRequest name="NameAndPopulationFetchRequest" entity="Country" predicateString="name CONTAINS &quot;a&quot; AND population &gt; 100"/>
+    <fetchRequest name="NameFetchRequest" entity="Country" predicateString="name CONTAINS &quot;a&quot;"/>
+    <fetchRequest name="PopulationFetchRequest" entity="Country" predicateString="population &gt; 250"/>
+    <elements>
+        <element name="Country" positionX="-63" positionY="-18" width="128" height="105"/>
+    </elements>
+</model>
